@@ -79,6 +79,7 @@ class MainProject extends JFrame implements ActionListener
 
         if(e.getActionCommand().equals("Exit"))
         {
+            JOptionPane.showMessageDialog(this, "By Clicking OK you will quit the quiz");
             System.exit(0);
         }
     }
