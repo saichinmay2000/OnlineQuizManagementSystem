@@ -25,11 +25,7 @@ class MainProject extends JFrame implements ActionListener
         b2=new JButton("Exit");
         b3=new JButton("Previous");
         b1.addActionListener(this);
-        b2.addActionListener(new ActionListener(){
-            public void actPer(ActionEvent ae){
-                System.exit(0);
-            }
-        });
+        b2.addActionListener(this);
         b3.addActionListener(this);
         add(b1);add(b2);add(b3);
         set();  
