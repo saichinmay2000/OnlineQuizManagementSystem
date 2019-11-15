@@ -44,7 +44,6 @@ class MainProject extends JFrame implements ActionListener
         setSize(500,400);
         setAlwaysOnTop(true);
         setResizable(false);
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setUndecorated(true);
         
     }  
@@ -61,10 +60,14 @@ class MainProject extends JFrame implements ActionListener
                 b1.setEnabled(false);  
                 b2.setText("Result");  
             }
-
         }
-        
-
+        if(e.getSource() == b3)
+        {
+            if(check())
+                count = count + 1;
+            current--;
+            set();
+        }
         if(e.getActionCommand().equals("Result"))  
         {  
             if(check())  
@@ -72,7 +75,12 @@ class MainProject extends JFrame implements ActionListener
             current++;  
             JOptionPane.showMessageDialog(this,"correct ans="+count);  
             System.exit(0);  
-        }  
+        }
+
+        if(e.getActionCommand().equals("Exit"))
+        {
+            System.exit(0);
+        }
     }
     void set()  
     {  
@@ -160,6 +168,6 @@ class MainProject extends JFrame implements ActionListener
     }  
     public static void main(String s[])  
     {  
-        new MainProject("Online Quiz Management System");  
+        new MainProject("Quiz Management System");  
     }  
 }
