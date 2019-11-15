@@ -26,11 +26,8 @@ class MainProject extends JFrame implements ActionListener
         b3=new JButton("Previous");
         b1.addActionListener(this);
         b2.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                if(e.getActionCommand().equals("Exit"))
-                {
-                    System.exit(0);
-                }
+            public void actPer(ActionEvent ae){
+                System.exit(0);
             }
         });
         b3.addActionListener(this);
@@ -68,28 +65,9 @@ class MainProject extends JFrame implements ActionListener
                 b1.setEnabled(false);  
                 b2.setText("Result");  
             }
-            if(current>0)
-            {
-                b3.setEnabled(true);
-            }  
+
         }
-        if(e.getSource() == b3)
-        {
-            if(check())
-                count = count-1;
-                current--;
-                set();
-                if(current==0)
-                {
-                    b3.setEnabled(false);
-                    b3.setText("Previous");
-                }    
-                if(current>9)  
-                {  
-                    b1.setEnabled(true);  
-                    b2.setText("Result");  
-                }
-        }
+        
 
         if(e.getActionCommand().equals("Result"))  
         {  

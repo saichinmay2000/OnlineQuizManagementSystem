@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainProject",
+            "request": "launch",
+            "mainClass": "MainProject",
+            "projectName": "OnlineQuizManagementSystem_a25c75bb"
+        }
+    ]
+}
