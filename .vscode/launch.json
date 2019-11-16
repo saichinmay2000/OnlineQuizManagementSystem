@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LoginForm",
+            "request": "launch",
+            "mainClass": "LoginForm",
+            "projectName": "OnlineQuizManagementSystem_a25c75bb"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MainProject",
             "request": "launch",
             "mainClass": "MainProject",

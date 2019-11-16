@@ -3,6 +3,7 @@ import javax.swing.*;
   
 class MainProject extends JFrame implements ActionListener  
 {  
+
     JLabel l;
     JRadioButton jb[]=new JRadioButton[5];  
     JButton b1,b2,b3;
@@ -11,7 +12,9 @@ class MainProject extends JFrame implements ActionListener
     int m[]=new int[10];      
     MainProject(String s)  
     {  
-        super(s);  
+        
+        super(s);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         l=new JLabel();  
         add(l);  
         bg=new ButtonGroup();  
@@ -47,7 +50,9 @@ class MainProject extends JFrame implements ActionListener
         setUndecorated(true);
         
     }  
-    public void actionPerformed(ActionEvent e)  
+    public MainProject() {
+	}
+	public void actionPerformed(ActionEvent e)  
     {  
         if(e.getSource()==b1)  
         {  
